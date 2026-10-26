@@ -16,9 +16,9 @@
 | **No.19** | Báo cáo T8 #2 (K1-2) | `K1 → A-1` | Không tháo/lắp nắp máy và dây cáp khi nạp FW & Thiết lập ban đầu (`FW書込・初期設定時のカバー・ケーブル着脱廃止`) | Lắp FAX, bật máy, lắp/tháo đồ gá hộp mực, lắp dummy hộp mực và nắp che (`30s + 25s = 55s`). | Cải tiến trình tự/FW để không cần tháo/lắp nắp & dây cáp; tận dụng ngay **12 bộ đồ gá hộp mực hiện có**. | `55s` | `55s` | Giảm `55s/máy` thao tác tay trực tiếp tại `A-1` | **Đang báo giá (`見積中`)** *(Tận dụng 12 gá hiện có)* | `IrisEXP改善提案まとめ.xlsx` (R33); `IrisEXP報告.pptx` (Slide 3); `調整工程計画.xlsx` (K1) |
 | **No.20** | Báo cáo T8 #3 (K1-3) | `K1 → A-1` | Chuyển việc thu thập dữ liệu kiểm tra từ USB sang mạng nội bộ (`USB検査ログ取得のネットワーク化`) | Cắm/rút USB thủ công để chép file log kết quả kiểm tra (`10s/máy`). | Truyền trực tiếp dữ liệu log kiểm tra về `Host PC` qua mạng nội bộ (`LAN/VLAN` qua `Mini PC`). | `10s` | `10s` | Giảm `10s/máy`, bỏ thao tác rút/cắm USB lấy log | **Đang báo giá (`見積中`)** | `IrisEXP改善提案まとめ.xlsx` (R34); `IrisEXP報告.pptx` (Slide 3); `調整工程計画.xlsx` (K1) |
 | **No.21** | Báo cáo T8 #4 (K2-1) | `K2 → A-2` | Đổi cơ cấu kết nối đồ gá kiểm tra Option từ ngàm khóa sang hút nam châm (`オプション検査治具のマグネット固定化`) | Cắm/rút nhiều đầu giắc `DP, DF, PF, IS/ZF` bằng tay (`90s/máy`), cáp dễ đứt ngầm gây dừng chuyền. | Đổi đầu kết nối đồ gá Option sang cơ cấu hút nam châm giúp gắn/tháo nhanh, giảm 1/2 thời gian thao tác. | `90s` | `45s` | Giảm `~45s/máy` (50% thời gian gá Option), chống đứt cáp | **Đang báo giá (`見積中`)** | `IrisEXP改善提案まとめ.xlsx` (R35); `IrisEXP報告.pptx` (Slide 3); `調整工程計画.xlsx` (K2) |
-| **No.22** | Báo cáo T8 #5 (K3-1) / `VN提案 #1` | `K3 → A-3` | **Tự động hóa kiểm tra thông mạch, tiếp địa, cách điện chịu áp (`自動導通・耐圧検査の自動化`)** | Cắm dây nguồn, kẹp que đo tiếp địa, bấm máy đo và chít barcode thủ công (`20s tiếp địa + 10s chịu áp = 30s`). | Xylanh khí nén SMC tự động cắm nguồn/chạm kim đo + `PLC FX5U` + `HMI GOT2000` + Barcode cố định kết nối máy `Chroma 19032`. **Quyết định DR4: Phải đo khi ĐÃ ĐÓNG VỎ MÁY tại A-3**. | `30s` | `30s` | Giảm `30s/máy`; tiết kiệm nhân công **29.600.000 VNĐ/năm (`1.138,46 USD/năm`)** | **ĐÃ CÓ BÁO GIÁ: `101.690.000 VNĐ` (`3.911,15 USD`)** theo BOM 25 mục *(Thuyết minh: `101,7 triệu VNĐ / 3.911,54 USD`; Tóm tắt `纏め`: `4.000 USD`; riêng Mục 17 Tủ điện `5 triệu VNĐ` ghi "Xin báo giá")* | `Iris EXPのVN提案.xlsx` (Sheets `纏め`, `自動導通・耐圧検査`, `導通・耐圧検査設備リスト`); `DR 4.pdf` |
-| **No.23** | Báo cáo T8 #6a / `VN提案 #2` *(ĐÃ HỦY)* | `K4 → A-4` | **[ĐÃ HỦY SAU DR4]** Chế tạo Robot đặt bản thảo lên mặt kính ISU (`ISU原稿セットロボット製作 - 廃止`) | Mở nắp Platen, đặt từng tờ lên mặt kính ISU: `U411 (45s) + SITC-2 (35s) + Halftone (30s) = 110s`. | Dự kiến Robot arm (`350tr`) + mở rộng 2 cell băng tải (`200tr`) + cấp nguồn (`50tr`) + định vị USB/LAN (`50tr`). **ĐÃ HỦY tại `連携会 7 / DR4`** do giá quá cao, hoàn vốn >6 năm, tốn diện tích. | `110s` | `0s` *(Đã hủy, thay bằng No.25)* | Tiết kiệm dự kiến `108.533.333 VNĐ/năm (4.174,36 USD/năm)` không bù nổi chi phí đầu tư | **`650.000.000 VNĐ` (`25.000 USD`) - ĐÃ HỦY BỎ (Không sử dụng)** | `Iris EXPのVN提案.xlsx` (Sheets `纏め`, `自動Scan tự động`); `連携会 第7回.txt` |
-| **No.24** | Báo cáo T8 #7 / `VN提案 #3` *(ĐÃ HỦY)* | `K4 → A-2/A-4` | **[ĐÃ HỦY SAU DR4]** Tự động hóa kiểm tra nhận diện USB và tọa độ Panel U201 bằng Robot (`USB認識・U201座標検査ロボット - 廃止`) | Cắm/rút USB kiểm tra nhận diện (`15s`) và dùng bút chạm 3 điểm trên màn hình `U201` (`15s`) = `30s/máy`. | Dự kiến làm cơ cấu tự động cắm USB và chạm màn hình (`4.000 USD`). **ĐÃ HỦY (`見送り`)** vì ROI thấp; chuyển sang bảo chứng USB khi nạp FW (`JP No.6`) & đọc log `U201` qua `Host PC` (`JP No.3`). | `30s` | `30s` *(Nhờ xóa bước theo JP No.3 & 6)* | Xóa `30s` tại VN (`15,12s U201 + 3,96s USB = 19,08s` trên `工程表`) bằng phần mềm 0 đồng TB | **`4.000 USD` - ĐÃ HỦY BỎ (Không sử dụng)** | `Iris EXPのVN提案.xlsx` (Sheet `纏め` R6); `IrisEXP改善提案まとめ.xlsx` (R38); `連携会 第7回.txt` |
+| **No.22** | Báo cáo T8 #5 (K3-1) / `VN提案 #1` | `K3 → A-3` | **Tự động hóa kiểm tra thông mạch, tiếp đất và chịu áp cách điện (`導通・接地および絶縁耐圧を確認`)** | Cắm dây nguồn, kẹp que đo tiếp đất, bấm máy đo cao áp và xác nhận thủ công (`20s tiếp đất + 10s chịu áp = 30s`). | JIG kết nối + kiểm tra tự động (`PLC Mitsubishi FX5U-64MT/ES`, `Module FX5-16EYR/ES`, `HMI Wecon PI3070ig`, `6 Xylanh SMC MGCLB16/CXSL15`, `5 Van SY5120`, `2 Cảm biến quang E3Z-LS61`, `Khung nhôm Misumi LCF8-4040`). **Quyết định DR4: Đo khi ĐÃ ĐÓNG VỎ MÁY**. | `30s` | `30s` | Giảm `30s/máy`; tiết kiệm nhân công **29.600.000 VNĐ/năm (`1.138,46 USD/năm`)** | **ĐÃ CÓ BÁO GIÁ: `101.690.000 VNĐ` (`3.911,15 USD`)** theo BOM 25 mục *(Thuyết minh: `101,7 triệu VNĐ / 3.911,54 USD`; Tóm tắt `纏め`: `4.000 USD`)* | `Iris EXPのVN提案.xlsx` (Sheets `纏め`, `自動導通・耐圧検査`, `導通・耐圧検査設備リスト`); `DR 4.pdf` |
+| **No.23** | Báo cáo T8 #6a / `VN提案 #2` | `K4 → A-4` | **Chế tạo Robot đặt bản thảo lên ISU, liên kết với Program để tự động điều chỉnh/kiểm tra (`ISU U411 + SITC-2 + Halftone`)** | Mở nắp Platen, đặt từng tờ lên mặt kính ISU: `U411 (45s) + SITC-2 (35s) + Halftone (30s) = 110s`. | Dự toán tại Sheet `自動Scan tự động`: (1) Bổ sung 2 Cell vào băng tải (`200tr / $7.692,31`) + (2) Bộ cấp nguồn máy in (`50tr / $1.923,08`) + (3) Bộ định vị kết nối dây USB/LAN (`50tr / $1.923,08`) + (4) Cánh tay Robot (`350tr / $13.461,54`). KTSX đã xác nhận giá TB; đồng thời tại `連携会 / DR4` đối chiếu với phương án bổ sung DP (`No.25`). | `110s` | `110s` | Giảm `110s/máy`; tiết kiệm nhân công **`108.533.333 VNĐ/năm` (`4.174,36 USD/năm`)** | **ĐÃ CÓ BÁO GIÁ: `650.000.000 VNĐ` (`25.000 USD`)** *(Đối chiếu phương án thay bằng DP No.25 sau DR4)* | `Iris EXPのVN提案.xlsx` (Sheets `纏め`, `自動Scan tự động`); `連携会 第7回.txt` |
+| **No.24** | Báo cáo T8 #7 / `VN提案 #3` | `K4 → A-2/A-4` | **Robot kết nối USB, Camera đánh giá hiển thị Panel & Camera AI cảm biến tọa độ, Robot chấm tọa độ U201 trên Panel** | Cắm/rút USB kiểm tra nhận diện (`15s`) và dùng bút chấm tọa độ `U201` trên Panel (`15s`) = `30s/máy`. | Dự toán tại Sheet `纏め` R6-R7: Chi phí thiết bị `4.000 USD` (`104.000.000 VNĐ`), hiệu quả tương đương No.1 (`-30s/máy`). Phương án đối ứng không dùng Robot tại `連携会`: bảo chứng USB khi nạp FW (`JP No.6`) & đọc log `U201` qua `Host PC` (`JP No.3`). | `30s` | `30s` | Giảm `30s/máy` (`No.1と同等の効果`); tiết kiệm **`29.600.000 VNĐ/năm` (`1.138,46 USD/năm`)** | **ĐÃ CÓ BÁO GIÁ: `104.000.000 VNĐ` (`4.000 USD`)** *(Đối chiếu phương án phần mềm JP No.3 & No.6)* | `Iris EXPのVN提案.xlsx` (Sheet `纏め` R6-R7); `IrisEXP改善提案まとめ.xlsx` (R38); `連携会 第7回.txt` |
 | **No.25** | Báo cáo T8 #6b *(Thay thế No.23)* | `K4 → A-4` | **Quét bản thảo liên tục bằng bộ nạp tự động DP của máy + PC tự động đánh giá (`本体のDPを用いた連続スキャン＋PC自動判定`)** | Đặt từng tờ bản thảo lên mặt kính ISU thủ công (`U411 45s + SITC-2 35s + Halftone 30s = 110s/máy`). | **PHƯƠNG ÁN ĐƯỢC CHỌN THAY THẾ ROBOT NO.23**: Đặt xấp bản thảo vào khay `DP (Document Processor)` của máy để tự kéo giấy quét liên tục 1 lần, gửi ảnh về PC tự động phán định. | `110s` | `110s` | Giảm `~110s/máy` mà không cần đầu tư Robot 650 triệu VNĐ | **Đang báo giá (`見積中`)** *(Không gán giá 650tr của No.23)* | `IrisEXP改善提案まとめ.xlsx` (R39); `連携会 第7回.txt`; `第13回-17回.pptx` |
 | **No.26** | Báo cáo T8 #8 (K6-1) | `K6 → A-3/A-4` | Phát triển phần mềm AI phân tích âm thanh lạ và kiểm tra nhiệt độ (`AIによる異音・温度検査ソフト開発`) | Công nhân nghe bằng tai trong buồng cách âm (`U030, U037, Fuser, FAN, Operation, MPF/DU = 40s/máy` tại K6). | Dùng Mic + phần mềm AI phân tích âm thanh & Camera nhiệt. Phía JP ước tính `600 vạn JPY (~40.000 USD: 100 vạn JPY gá/mic + 500 vạn JPY AI)`. **Chuyển sang nghiên cứu dài hạn 2026-2030**. | `40s` | `40s` *(Dài hạn 2026-2030)* | Tự động hóa phán định âm thanh lạ (chưa áp dụng ngay cho đợt MP đầu tiên của Iris EXP) | **`600 vạn JPY (~40.000 USD)` - Chuyển R&D dài hạn 2026-2030** *(Không xin duyệt đợt này)* | `IrisEXP改善提案まとめ.xlsx` (R40); `IrisEXP 保証工程検討資料(更新中).pptx` (Slide 8); `DR議事録` (R59) |
 | **No.27** | Báo cáo T8 #9 & #10 (K6-2, K7) | `K6, K7 → A-4` | **Sử dụng Camera đo nồng độ, đo lề, kiểm tra bẩn bản in (PPT) & tích hợp đánh giá hình ảnh (`カメラによる濃度・マージン・PPT・画像総合検査`)** | Đo nồng độ 3 tờ bằng máy đo tay (`Check Black 45s + Check Color 112s + DC-1 35s = 192s`), đo lề (`28s`), soi kính lúp kiểm tra `PPT` tờ GY (`10s`) = `230s`. | Dùng Camera/Scanner phân tích ảnh tự động: Đo nồng độ giảm từ **192s xuống 15s (5s/tờ → giảm 177s/máy)**; kết hợp tự động hóa đo lề (`-28s`) và xóa/tự động kiểm tra `PPT` (`-10s`). | `230s` (`192s` nồng độ) | **`177s`** (riêng nồng độ) / **`215s`** (gộp lề & PPT) | Giảm `177s ~ 215s/máy` (tương đương giảm `~1,8-2,2 người` ở Takt 97s) | **Đang báo giá (`見積中`)** | `DSLK Điều chỉnh Iris.xlsx` (Sheet `Đo nồng độ, đo lề, ppt`); `IrisEXP改善提案まとめ.xlsx` (R41); `調整工程計画.xlsx` |
@@ -55,41 +55,45 @@
 
 ---
 
-## 3. Chi tiết BOM 25 hạng mục của Đề án No.22 - Thiết bị tự động kiểm tra thông mạch, tiếp địa, cách điện chịu áp (`導通・耐圧検査設備リスト`)
+## 3. Chi tiết BOM 25 hạng mục của Đề án No.22 (`導通・耐圧検査設備リスト`) và Báo giá No.23, No.24 trong `Iris EXPのVN提案.xlsx`
 
-- **Nguồn**: `đề án cải tiến Điều chỉnh/Iris EXPのVN提案.xlsx` - Sheet `導通・耐圧検査設備リスト` (Rows 1-28), Sheet `自動導通・耐圧検査` (Rows 3-4), Sheet `纏め` (Row 2).
+- **Nguồn**: `đề án cải tiến Điều chỉnh/Iris EXPのVN提案.xlsx` - Sheet `導通・耐圧検査設備リスト` (Rows 1-32), Sheet `自動導通・耐圧検査` (Rows 1-9), Sheet `自動Scan tự động` (Rows 1-15), Sheet `纏め` (Rows 1-15).
 - **Tỷ giá quy đổi trong file nguồn**: `1 USD = 26.000 VNĐ`.
 
-| STT | Tên thiết bị / Linh kiện (Theo Sheet `導通・耐圧検査設備リスト`) | Quy cách / Model | SL | ĐVT | Đơn giá (`VNĐ`) | Thành tiền (`VNĐ`) | Thành tiền (`USD`) | Ghi chú trong nguồn |
+| STT | Tên thiết bị / Linh kiện (Theo Sheet `導通・耐圧検査設備リスト`) | Quy cách / Model | SL | ĐVT | Đơn giá (`VNĐ`) | Thành tiền (`VNĐ`) | Thành tiền (`USD`) | Ghi chú / Link tham khảo trong nguồn |
 | :---: | :--- | :--- | :---: | :---: | ---: | ---: | ---: | :--- |
-| 1 | Nhôm định hình 30x30 | `30x30` | 2 | Thanh | `290.000` | `580.000` | `22,31` | Đã có giá |
-| 2 | Nhôm định hình 30x60 | `30x60` | 3 | Thanh | `520.000` | `1.560.000` | `60,00` | Đã có giá |
-| 3 | Nhôm định hình 40x40 | `40x40` | 4 | Thanh | `450.000` | `1.800.000` | `69,23` | Đã có giá |
-| 4 | Ke góc 30x30 | `30x30` | 50 | Cái | `6.000` | `300.000` | `11,54` | Đã có giá |
-| 5 | Ke góc 40x40 | `40x40` | 50 | Cái | `9.000` | `450.000` | `17,31` | Đã có giá |
-| 6 | Chân đế tăng chỉnh M12 | `M12` | 12 | Cái | `35.000` | `420.000` | `16,15` | Đã có giá |
-| 7 | Bánh xe có khóa | Có khóa | 8 | Cái | `85.000` | `680.000` | `26,15` | Đã có giá |
-| 8 | Tấm Bakelit gia công đồ gá | Theo bản vẽ | 1 | Bộ | `5.000.000` | `5.000.000` | `192,31` | Đã có giá |
-| 9 | Tấm Mica trong suốt che chắn an toàn | `T=5mm` | 2 | Tấm | `1.400.000` | `2.800.000` | `107,69` | Đã có giá |
-| 10 | Đầu đọc Barcode cố định (`Fixed Barcode Reader`) | Đọc tự động S/N | 1 | Cái | `19.000.000` | `19.000.000` | `730,77` | Đã có giá |
-| 11 | Xylanh khí nén SMC (Cắm nguồn / Chạm tiếp địa / Nhấn nút) | `SMC` | 3 | Cái | `2.000.000` | `6.000.000` | `230,77` | Đã có giá |
-| 12 | Xylanh dẫn hướng SMC | `SMC` | 1 | Cái | `3.500.000` | `3.500.000` | `134,62` | Đã có giá |
-| 13 | Van điện từ khí nén SMC (`Solenoid Valve`) | `SMC` | 4 | Cái | `500.000` | `2.000.000` | `76,92` | Đã có giá |
-| 14 | Cảm biến hành trình Xylanh (`Auto Switch`) | `SMC` | 8 | Cái | `150.000` | `1.200.000` | `46,15` | Đã có giá |
-| 15 | Giảm chấn thủy lực (`Shock Absorber`) | `SMC` | 4 | Cái | `150.000` | `600.000` | `23,08` | Đã có giá |
-| 16 | Ống khí nén & Đầu nối nhanh (`Fitting`) | `SMC` | 1 | Bộ | `200.000` | `200.000` | `7,69` | Đã có giá |
-| **17** | **Tủ điện điều khiển** | **`500x400x200`** | **1** | **Cái** | **`5.000.000`** | **`5.000.000`** | **`192,31`** | **Trong nguồn ghi: `"Xin báo giá"`** |
-| 18 | PLC Mitsubishi `FX5U-32MT/ES` | `FX5U-32MT/ES` | 1 | Cái | `13.000.000` | `13.000.000` | `500,00` | Đã có giá |
-| 19 | Màn hình cảm ứng HMI Mitsubishi `GOT2000` (7 inch) | `GT2107-WTBD` | 1 | Cái | `12.000.000` | `12.000.000` | `461,54` | Đã có giá |
-| 20 | Bộ nguồn tổ ong `24VDC` (`Power Supply`) | `24VDC` | 1 | Cái | `650.000` | `650.000` | `25,00` | Đã có giá |
-| 21 | Rơ-le trung gian (`Relay 24VDC`) | `Omron MY2N` | 10 | Cái | `95.000` | `950.000` | `36,54` | Đã có giá |
-| 22 | Nút nhấn Start / Stop / Emergency / Reset | `Phi 22` | 1 | Bộ | `500.000` | `500.000` | `19,23` | Đã có giá |
-| 23 | Đèn tháp cảnh báo 3 màu có còi (`Signal Tower`) | `24VDC` | 1 | Cái | `1.500.000` | `1.500.000` | `57,69` | Đã có giá |
-| 24 | Dây điện, cầu đấu, máng cáp, vật tư phụ điện | Tổng hợp | 1 | Bộ | `2.000.000` | `2.000.000` | `76,92` | Đã có giá |
-| 25 | Gia công chi tiết cơ khí chính xác (Đầu kẹp phích cắm, giá đỡ...) | Gia công CNC | 1 | Bộ | `20.000.000` | `20.000.000` | `769,23` | Đã có giá |
-| **TỔNG** | **Tổng cộng 25 hạng mục theo BOM (`導通・耐圧検査設備リスト` Row 28)** | | | | | **`101.690.000`** | **`3.911,15`** | *(Nếu tách riêng Mục 17 Tủ điện 5tr: 24 mục cố định = **`96.690.000 VNĐ / 3.718,85 USD`**)* |
-| *Đối chiếu* | *Con số làm tròn trên Sheet thuyết minh (`自動導通・耐圧検査` Row 3-4)* | | | | | *`101.700.000`* | *`3.911,54`* | *Làm tròn lên +10.000 VNĐ (+0,39 USD)* |
-| *Đối chiếu* | *Con số làm tròn trên Sheet tổng hợp (`纏め` Row 2)* | | | | | *`104.000.000`* | *`4.000,00`* | *Làm tròn lên 4.000 USD* |
+| 1 | PLC Mitsubishi `FX5U-64MT/ES` | `FX5U-64MT/ES` | 1 | Cái | `9.500.000` | `9.500.000` | `365,38` | `codienhaiau.com` |
+| 2 | Mạch Bảo Vệ `CP30-BA` (`CP30-BA 2P 1-M 5A T`) | `CP30-BA 2P 1-M 5A T` | 1 | Cái | `650.000` | `650.000` | `25,00` | `vn.misumi-ec.com` |
+| 3 | Module Mitsubishi `FX5-16EYR/ES` (16 Out Relay) | `FX5-16EYR/ES` | 1 | Cái | `2.000.000` | `2.000.000` | `76,92` | `codienhaiau.com` |
+| 4 | Contactor Mitsubishi `S-T32` 32A 15kW AC200V 3P | `S-T32 AC200V 3P` | 3 | Cái | `500.000` | `1.500.000` | `57,69` | `codienhaiau.com` |
+| 5 | Bộ nguồn Omron `S8VK-C06024` 2.5A 24VDC 60W | `S8VK-C06024` | 1 | Cái | `700.000` | `700.000` | `26,92` | `codienhaiau.com` |
+| 6 | Cầu đấu nguồn (`BN30WPN50`) gói 50pcs | `BN30WPN50` | 1 | Gói | `1.000.000` | `1.000.000` | `38,46` | `vn.misumi-ec.com` |
+| 7 | Chặn cầu đấu nguồn (`BNE30W`) | `BNE30W` | 2 | Cái | `50.000` | `100.000` | `3,85` | `vn.misumi-ec.com` |
+| 8 | Cầu đấu tín hiệu (`BN10WPN50`) gói 50 pcs | `BN10WPN50` | 1 | Gói | `700.000` | `700.000` | `26,92` | `vn.misumi-ec.com` |
+| 9 | Chặn cầu đấu tín hiệu (`BNE15W`) | `BNE15W` | 2 | Cái | `45.000` | `90.000` | `3,46` | `vn.misumi-ec.com` |
+| 10 | Jump nối cầu đấu tín hiệu (`BNJ16FBPN10`) (gói 10 pcs) | `BNJ16FBPN10` | 1 | Gói | `540.000` | `540.000` | `20,77` | `vn.misumi-ec.com` |
+| 11 | Chốt Chặn Thanh Ray (`BNL6PN10`) (gói 10 pcs) | `BNL6PN10` | 1 | Gói | `110.000` | `110.000` | `4,23` | `vn.misumi-ec.com` |
+| 12 | Công tắc 2 vị trí ø30 TWN (`ASN211N`) | `ASN211N` | 1 | Cái | `400.000` | `400.000` | `15,38` | `vn.misumi-ec.com` |
+| 13 | Còi báo FUJI `DR30B6-EB` | `DR30B6-EB` | 1 | Cái | `300.000` | `300.000` | `11,54` | `baa.vn` |
+| 14 | Đèn tủ điện `APN122DNPW` | `APN122DNPW` | 1 | Cái | `400.000` | `400.000` | `15,38` | `vn.misumi-ec.com` |
+| 15 | Máng nhựa 35x35 `MRL3535 MORELE` cây 2m | `MRL3535` | 2 | Cây | `50.000` | `100.000` | `3,85` | `vanvh.com` |
+| 16 | Ray nhôm `MRB-1000` gắn thiết bị trong tủ điện | `MRB-1000` | 2 | Thanh | `200.000` | `400.000` | `15,38` | `vn.misumi-ec.com` |
+| **17** | **Tủ điện** | **Tủ điện điều khiển** | **1** | **Cái** | **`5.000.000`** | **`5.000.000`** | **`192,31`** | **Trong nguồn ghi: `"Xin báo giá"`** |
+| 18a | Van 1 chiều `SY5120-5LZD-01` | `SY5120-5LZD-01` | 5 | Cái | `1.000.000` | `5.000.000` | `192,31` | `sieuthidientudong.com` |
+| 18b | Xylanh `MGCLB16-50` | `MGCLB16-50` | 1 | Cái | `4.000.000` | `4.000.000` | `153,85` | `vn.misumi-ec.com` |
+| 18c | Xylanh `CXSL15-50` | `CXSL15-50` | 1 | Cái | `5.100.000` | `5.100.000` | `196,15` | `vn.misumi-ec.com` |
+| 18d | Xylanh `CXSL15-70` | `CXSL15-70` | 1 | Cái | `5.600.000` | `5.600.000` | `215,38` | `vn.misumi-ec.com` |
+| 19 | Xylanh `CXSL15-100` | `CXSL15-100` | 3 | Cái | `6.000.000` | `18.000.000` | `692,31` | `vn.misumi-ec.com` |
+| 20 | Cảm biến quang `E3Z-LS61` | `E3Z-LS61` | 2 | Cái | `1.500.000` | `3.000.000` | `115,38` | `hoplongtech.com` |
+| 21 | Màn hình HMI `Wecon PI3070ig` | `PI3070ig` | 1 | Cái | `5.000.000` | `5.000.000` | `192,31` | `khangvietelectric.com` |
+| 22 | Thanh nhôm dựng khung `LCF8-4040-2000` | `LCF8-4040-2000` | 15 | Thanh | `500.000` | `7.500.000` | `288,46` | `Misumi economy` |
+| 23 | Ke góc `HBLTS8-45` | `HBLTS8-45` | 50 | Cái | `60.000` | `3.000.000` | `115,38` | `Misumi` |
+| 24 | Nut `HNTP8-8` | `HNTP8-8` | 100 | Cái | `20.000` | `2.000.000` | `76,92` | `Misumi` |
+| 25 | Chi phí khác (bao gồm các chi tiết gia công và các thiết bị điện phát sinh) | Gia công & phụ kiện | 1 | Gói | `20.000.000` | `20.000.000` | `769,23` | Đã có giá |
+| **CỘNG NO.22** | **Tổng cộng 25 hạng mục theo BOM (`導通・耐圧検査設備リスト` Row 31-32)** | | | | | **`101.690.000`** | **`3.911,15`** | *(Thuyết minh `自動導通・耐圧検査`: `101.700.000 VNĐ / 3.911,54 USD`; Bảng `纏め`: `4.000 USD`)* |
+| **No.23** | **Tự động hóa Scan bản thảo bằng Robot (`自動Scan tự động` Row 1-7)**: 2 Cell băng tải (`200tr`) + Cấp nguồn (`50tr`) + Định vị cáp USB/LAN (`50tr`) + Cánh tay Robot (`350tr`) | | 1 | Hệ thống | `650.000.000` | **`650.000.000`** | **`25.000,00`** | Giảm `110s/máy`, tiết kiệm `108.533.333 VNĐ/năm (4.174,36 USD/năm)` |
+| **No.24** | **Robot kết nối USB, Camera đánh giá Panel & Camera AI + Robot chấm tọa độ U201 (`纏め` Row 6-7)** | | 1 | Hệ thống | `104.000.000` | **`104.000.000`** | **`4.000,00`** | Giảm `30s/máy`, tiết kiệm `29.600.000 VNĐ/năm (1.138,46 USD/năm)` |
+| **TỔNG 3 ĐA** | **Tổng cộng 3 đề án có báo giá trong `Iris EXPのVN提案.xlsx` (`No.22 + No.23 + No.24`)** | | | | | **`855.690.000`** | **`32.911,15`** | *(Theo thuyết minh: `855.700.000 VNĐ / 32.911,54 USD`; Theo `纏め`: `858.000.000 VNĐ / 33.000 USD`)* |
 
 ---
 
