@@ -2,7 +2,7 @@
 
 - **Mã vé**: `BAOCAO-DCEXP-01`
 - **Ngày lập**: `26/10/2026`
-- **Nguồn dữ liệu duy nhất**: Thư mục Google Drive `"Điều chỉnh"` (ID: `1MobnjmuxBrttOWmr6PgLNsb219cR6Alj`) — 78 tài liệu nguồn (66 file trên cây thư mục chính + 12 file độc lập trong gói `IrisEXP　保証工程連携会/DieuchinhIrisEXP.zip`).
+- **Nguồn dữ liệu căn cứ**: Hồ sơ kỹ thuật công đoạn Điều chỉnh / Bảo chứng thân máy (`本体保証工程`) — gồm các biên bản `保証工程連携会` lần 2–17 (đến ngày `15/10/2026`), hồ sơ `DR4` (`06/08/2026`), bảng công đoạn chuẩn `工程表` và bảng tính đề án cải tiến của 3 cứ điểm `JP–CN–VN`.
 - **File Excel đính kèm**: [`Bang_so_lieu_chi_tiet_IrisEXP_VN.xlsx`](./Bang_so_lieu_chi_tiet_IrisEXP_VN.xlsx)
 - **File Báo cáo PowerPoint chính**: [`../IrisEXP_Bao-cao-de-an-VN.pptx`](../IrisEXP_Bao-cao-de-an-VN.pptx)
 
